@@ -110,11 +110,12 @@ var platforms = function(name,depth,position,url) {
 };
 
 var radar_data = [
-    { 'quadrant': 'Techniques',
-        'left' : 45,
-        'top' : 18,
-        'color' : '#8FA227',
-        'items' : [ 
+    {
+        quadrant: 'Techniques',
+        left : 45,
+        top : 18,
+        color : '#8FA227',
+        items : [ 
             { name: 'Git flow / Pull Requests ^', pc: { r: 230, t: 133 }, movement: 'c' },
             {name:'Incremental data warehousing', pc:{'r':250,'t':165},movement:'c'},    
             {name:'Events for messages - CQRS', pc:{'r':225,'t':120},movement:'c'},
@@ -145,11 +146,12 @@ var radar_data = [
             {name:'Coding architects', pc:{'r':90,'t':170},movement:'c'}
         ]
     },
-    { 'quadrant': 'Libraries',
-        'left': w-200+30,
-        'top' : 18,
-        'color' : '#587486',
-        'items' : [ 
+    {
+        quadrant: 'Libraries',
+        left: w-200+30,
+        top : 18,
+        color : '#587486',
+        items : [ 
             { name: 'Docker', pc: { r: 170, t: 19 }, movement: 't' },
             { name: 'bind',    pc: { r: 150, t: 69 },    movement: 'c' },
             { name: 'Appium',    pc: { r: 110, t: 70 },    movement: 'c',    domain: 'mobile, front-end' }, 
@@ -188,29 +190,31 @@ var radar_data = [
             { name: 'Subversion',    pc: { r: 330, t: 18 },    movement: 'c' }
         ]
     },
-    { 'quadrant': 'Tools', 
-        'left' :45,
-         'top' : (h/2 + 18),
-        'color' : '#DC6F1D',
-        'items' : [
+    {
+        quadrant: 'Tools', 
+        left :45,
+        top : (h/2 + 18),
+        color : '#DC6F1D',
+        items : [
             { name: 'GitHub', pc:{r:30,t:260}, movement: 'c'},
             { name: 'TeamCity', pc:{r:30,t:230}, movement: 'c'},
         ]
     },
-    { 'quadrant': 'Languages & Frameworks',
-        'color' : '#B70062',
-        'left'  : (w-200+30),
-        'top' :   (h/2 + 18),
-      'items' : [
-          // Adopt
-          { name: 'C#', pc: { r: 60, t: 290 },  movement: 'c' },
-          { name: '.NET 4.5', pc: { r: 30, t: 310 },  movement: 'c' },
-          { name: 'JavaScript', pc: { r: 60, t: 330 }, movement: 'c'},
-          // Validate
-          { name: 'TypeScript', pc: { r: 160, t: 300 }, movement: 'c'},
-          // Explore
-          { name: '.NET CORE', pc: { r: 260, t: 320 }, movement: 'c'},
-          // Kill
+    {
+        quadrant: 'Languages & Frameworks',
+        color : '#B70062',
+        left  : (w-200+30),
+        top :   (h/2 + 18),
+        items : [
+            // Adopt
+            { name: 'C#', pc: { r: 60, t: 290 },  movement: 'c' },
+            { name: '.NET 4.5', pc: { r: 30, t: 310 },  movement: 'c' },
+            { name: 'JavaScript', pc: { r: 60, t: 330 }, movement: 'c'},
+            // Validate
+            { name: 'TypeScript', pc: { r: 160, t: 300 }, movement: 'c'},
+            // Explore
+            { name: '.NET CORE', pc: { r: 260, t: 320 }, movement: 'c'},
+            // Kill
           { name: 'WinForms', pc: { r: 360, t: 320 }, movement: 'c'}
         ]
     }
