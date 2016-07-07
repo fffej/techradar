@@ -158,7 +158,7 @@ var radar_data = [
             // Validate
 
             // Kill
-            { name: 'VM_Automation', pc: {r: 350, t: 200 }, movement: 'c'}
+            { name: 'VM_Automation', pc: {r: 150, t: 200 }, movement: 'c'}
         ]
     },
     {
