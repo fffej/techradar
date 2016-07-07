@@ -3,10 +3,10 @@ document.title = "Redgate Technology Radar (July 2016)";
 
 
 var radar_arcs = [
-                   {'r':100,'name':'JFDI'}     // well proven, safe choice
-                  ,{'r':200,'name':'Validate'} // worked on small example, known good, does it meet our needs?
-                  ,{'r':300,'name':'Explore'}  // new ideas on the periphery we should investigate and assess 
-                  ,{'r':400,'name':'Kill'}     // in the past a JFDI, but not suitable for any new projects
+                   {r:100, name: 'JFDI'}     // well proven, safe choice
+                  ,{r:200, name: 'Validate'} // worked on small example, known good, does it meet our needs?
+                  ,{r:300, name: 'Explore'}  // new ideas on the periphery we should investigate and assess 
+                  ,{r:400, name: 'Kill'}     // in the past a JFDI, but not suitable for any new projects
                  ];
 
 //This is your raw data
@@ -82,8 +82,8 @@ var kill = function(ness) {
 
 var element = function(name, depth, baseAngle, percentageAngle, url) {
   var result = {
-    'name': name,
-    'pc':   makeCoords(depth,baseAngle + (90 * percentageAngle / 100))
+    name: name,
+    pc:   makeCoords(depth,baseAngle + (90 * percentageAngle / 100))
   };
 
   if (url) {
@@ -116,33 +116,33 @@ var radar_data = [
         'color' : '#8FA227',
         'items' : [ 
             { name: 'Git flow / Pull Requests ^', pc: { r: 230, t: 133 }, movement: 'c' },
-            {'name':'Incremental data warehousing', 'pc':{'r':250,'t':165},'movement':'c'},    
-            {'name':'Events for messages - CQRS', 'pc':{'r':225,'t':120},'movement':'c'},
-            {'name':'Measure Pipeline disruptions', 'pc':{'r':280,'t':110},'movement':'c'}, 
-            {'name':'Continuous Experimentation', 'pc':{'r':230,'t':110},'movement':'c'},
+            {name:'Incremental data warehousing', pc:{'r':250,'t':165},movement:'c'},    
+            {name:'Events for messages - CQRS', pc:{'r':225,'t':120},movement:'c'},
+            {name:'Measure Pipeline disruptions', pc:{'r':280,'t':110},movement:'c'}, 
+            {name:'Continuous Experimentation', pc:{'r':230,'t':110},movement:'c'},
             { name: 'Reduce iRules dependence ^', pc: { r: 280, t: 133 }, movement: 'c' },
-            {'name':'SaaS for non-core systems', 'pc':{'r':170,'t':150},'movement':'c'},   
-            {'name':'Pair Programming', 'pc':{'r':130,'t':170},'movement':'c'}, 
-            {'name':'iOS Accessibility', 'pc':{'r':170,'t':110},'movement':'c'},
-            {'name':'Single Page App', 'pc':{'r':150,'t':95},'movement':'c', 'url':'http://www.google.com'},
-            {'name':'iOS Adaptivity', 'pc':{'r':180,'t':105},'movement':'c'},   
-            {'name':'Build Pipelines', 'pc':{'r':180,'t':100},'movement':'c'},   
-            {'name':'Data Informed Decion Making', 'pc':{'r':130,'t':110},'movement':'c'},
-            {'name':'Polygot Programming', 'pc':{'r':180,'t':170},'movement':'c'},
+            {name:'SaaS for non-core systems', pc:{'r':170,'t':150},movement:'c'},   
+            {name:'Pair Programming', pc:{'r':130,'t':170},movement:'c'}, 
+            {name:'iOS Accessibility', pc:{'r':170,'t':110},movement:'c'},
+            {name:'Single Page App', pc:{'r':150,'t':95},movement:'c', 'url':'http://www.google.com'},
+            {name:'iOS Adaptivity', pc:{'r':180,'t':105},movement:'c'},   
+            {name:'Build Pipelines', pc:{'r':180,'t':100},movement:'c'},   
+            {name:'Data Informed Decion Making', pc:{'r':130,'t':110},movement:'c'},
+            {name:'Polygot Programming', pc:{'r':180,'t':170},movement:'c'},
             { name: 'internal load balancing off F5^', pc: { r: 180, t: 133 }, movement: 'c' },
-            {'name':'Isolated dev envs', 'pc':{'r':180,'t':125},'movement':'c'},  
-            {'name':'Edge Services', 'pc':{'r':130,'t':160},'movement':'c'}, 
-            {'name':'Clean Code', 'pc':{'r':130,'t':120},'movement':'c'},
-            {'name':'Wide and Thin Front-Ends', 'pc':{'r':180,'t':160},'movement':'c'},
-            {'name':'Zookeeper for App Config', 'pc':{'r':130,'t':130},'movement':'c'}, 
-            {'name':'Property based testing', 'pc':{'r':130,'t':165},'movement':'c'},
-            {'name':'Evolutionary architecture', 'pc':{'r':120,'t':95},'movement':'c'},
-            {'name':'Code Reviews', 'pc':{'r':110,'t':110},'movement':'c'},
-            {'name':'Valuable, cheap tests', 'pc':{'r':130,'t':150},'movement':'c'},
-            {'name':'Sacrificial Architecture', 'pc':{'r':80,'t':100},'movement':'c'},   
-            {'name':'Sensible defaults', 'pc':{'r':80,'t':150},'movement':'c'},   
-            {'name':'Dependency Injection', 'pc':{'r':80,'t':130},'movement':'c'},   
-            {'name':'Coding architects', 'pc':{'r':90,'t':170},'movement':'c'}
+            {name:'Isolated dev envs', pc:{'r':180,'t':125},movement:'c'},  
+            {name:'Edge Services', pc:{'r':130,'t':160},movement:'c'}, 
+            {name:'Clean Code', pc:{'r':130,'t':120},movement:'c'},
+            {name:'Wide and Thin Front-Ends', pc:{'r':180,'t':160},movement:'c'},
+            {name:'Zookeeper for App Config', pc:{'r':130,'t':130},movement:'c'}, 
+            {name:'Property based testing', pc:{'r':130,'t':165},movement:'c'},
+            {name:'Evolutionary architecture', pc:{'r':120,'t':95},movement:'c'},
+            {name:'Code Reviews', pc:{'r':110,'t':110},movement:'c'},
+            {name:'Valuable, cheap tests', pc:{'r':130,'t':150},movement:'c'},
+            {name:'Sacrificial Architecture', pc:{'r':80,'t':100},movement:'c'},   
+            {name:'Sensible defaults', pc:{'r':80,'t':150},movement:'c'},   
+            {name:'Dependency Injection', pc:{'r':80,'t':130},movement:'c'},   
+            {name:'Coding architects', pc:{'r':90,'t':170},movement:'c'}
         ]
     },
     { 'quadrant': 'Libraries',
@@ -201,12 +201,17 @@ var radar_data = [
         'color' : '#B70062',
         'left'  : (w-200+30),
         'top' :   (h/2 + 18),
-        'items' : [ 
-            { name: 'C#', pc: { r: 60, t: 290 },  movement: 'c' },
-            { name: '.NET 4.5', pc: { r: 30, t: 310 },  movement: 'c' },
-            { name: 'JavaScript', pc: { r: 60, t: 330 }, movement: 'c'},
-            { name: 'TypeScript', pc: { r: 160, t: 300 }, movement: 'c'},
-            { name: '.NET CORE', pc: { r: 260, t: 320 }, movement: 'c'}
+      'items' : [
+          // Adopt
+          { name: 'C#', pc: { r: 60, t: 290 },  movement: 'c' },
+          { name: '.NET 4.5', pc: { r: 30, t: 310 },  movement: 'c' },
+          { name: 'JavaScript', pc: { r: 60, t: 330 }, movement: 'c'},
+          // Validate
+          { name: 'TypeScript', pc: { r: 160, t: 300 }, movement: 'c'},
+          // Explore
+          { name: '.NET CORE', pc: { r: 260, t: 320 }, movement: 'c'},
+          // Kill
+          { name: 'WinForms', pc: { r: 360, t: 320 }, movement: 'c'}
         ]
     }
 ];
