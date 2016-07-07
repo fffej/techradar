@@ -152,9 +152,13 @@ var radar_data = [
         color : '#DC6F1D',
         items : [
             // Adopt
-            { name: 'GitHub', pc: {r:30,t:260}, movement: 'c'},
-            { name: 'TeamCity', pc: {r:30,t:230}, movement: 'c'},
-            { name: 'Slack', pc: {r: 50, t: 200}, movement: 'c'}            
+            { name: 'GitHub', pc: { r: 30,t: 260 }, movement: 'c'},
+            { name: 'TeamCity', pc: { r: 30, t: 230 }, movement: 'c'},
+            { name: 'Slack', pc: { r: 50, t: 200 }, movement: 'c'},
+            // Validate
+
+            // Kill
+//            { name: 'VM_Automation', pc: {r: 350, t: 200 }, movement: 'c'}
         ]
     },
     {
@@ -172,7 +176,7 @@ var radar_data = [
             // Explore
             { name: '.NET CORE', pc: { r: 260, t: 320 }, movement: 'c'},
             // Kill
-          { name: 'WinForms', pc: { r: 360, t: 320 }, movement: 'c'}
+            { name: 'WinForms', pc: { r: 360, t: 320 }, movement: 'c'}
         ]
     }
 ];
